@@ -1,0 +1,9 @@
+services:
+  hex:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: hex-line-of-sight:local
+    ports:
+      - "8080:80"
+    restart: unless-stopped
